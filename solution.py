@@ -79,6 +79,6 @@ class Solver:
 
     def write_output(self, output, elapsed_time):
         f = open(self.output_file_name, 'w')
-        f.write("Time: \n".format(elapsed_time))
+        f.write("Time: {}\n".format(elapsed_time))
         f.write('Sorted Array: ' + ' '.join(map(str, output)) + '\n')
         f.close()
